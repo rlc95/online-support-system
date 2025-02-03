@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Project Setup Guide
 
 ## Prerequisites
@@ -49,3 +50,6 @@ Admin password : 87654321
  http://localhost:8000/register
 
 
+=======
+# online-support-system
+>>>>>>> e64a11e2f7b53482e747f4c6e8f5d64b2ab5d5fd
