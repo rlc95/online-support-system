@@ -1,0 +1,93 @@
+.row {
+    display: block;
+}
+div {
+    display: inline-block;
+    vertical-align:top;
+}
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    margin: 0px;
+}
+tbody td{
+    font-family: Courier New;
+}
+table{
+    width: max-content;
+}
+/*  tr{
+    line-height: 10px;
+} */
+tr th{
+    font-weight: bold;
+}
+tr td,tr th{
+    padding : 0px 2px 0px 2px !important;
+    margin : 0px !important;
+    vertical-align: middle !important;
+}
+table.tbl_styl1 > thead > tr > th{
+    border:1px solid black !important;
+}
+table.tbl_styl1 > tbody > tr > td{
+    border:1px solid black !important;
+}
+table.tbl_styl1 > tbody > tr > th{
+    border:1px solid black !important;
+}
+table.tbl_styl2 > thead > tr > th {
+    border:1px solid black !important;
+}
+table.tbl_styl2 > tbody > tr > td {
+    border-bottom:1pt dotted #cdcdcd !important;
+}
+table.tbl_styl2 > tfoot > tr > td {
+    border:none !important;
+}
+table.tbl_styl2 > tfoot > tr > th {
+    border:none !important;
+}
+h5{
+    font-weight: bold;
+}
+footer {
+    position: fixed;
+    bottom: -40px;
+    left: 0px;
+    right: 0px;
+    height: 30px;
+}
+
+.headColor_1{
+    color: #7d7d7d;
+}
+.headColor_2{
+    color: #cdcdcd;
+}
+
+.bold{
+    font-weight: bold;
+}
+.bold1{
+    font-size: 2.0em;
+    font-weight:900;
+}
+
+.line_0{
+    line-height: 0;
+}
+.line_1{
+    line-height: 1px;
+}
+.line_2{
+    line-height: 5px;
+}
+.nonbreak{
+    page-break-inside: avoid;
+}
+.page-number:after { content: counter(page); }
+/* A4 */
+
+/* A5 */
+

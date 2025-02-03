@@ -1,0 +1,40 @@
+<?php
+session_start();
+//Clear Sessions
+if(isset($_SESSION['brco'])){
+	$brco=$_SESSION['brco'];
+	unset($brco);
+}
+if(isset($_SESSION['usid'])){
+	$usid=$_SESSION['usid'];
+	unset($usid);
+}
+if(isset($_SESSION['usna'])){
+	$usna=$_SESSION['usna'];
+	unset($usna);
+}
+if(isset($_SESSION['usgp'])){
+	$usgp=$_SESSION['usgp'];
+	unset($usgp);
+}
+if(isset($_SESSION['uspm'])){
+	$uspm=$_SESSION['uspm'];
+	unset($uspm);
+}
+if(isset($_SESSION['sfvs'])){
+	$sfvs=$_SESSION['sfvs'];
+	unset($sfvs);
+}
+if(isset($_SESSION['tken'])){
+	$tken=$_SESSION['tken'];
+	unset($tken);
+}
+if(isset($_SESSION['dbna'])){
+	$dbna=$_SESSION['dbna'];
+	unset($dbna);
+}
+session_unset();
+session_destroy();
+echo "<script type='text/javascript'>window.open('../../index.php','_self');</script>";
+exit;
+?>

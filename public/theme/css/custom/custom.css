@@ -1,0 +1,107 @@
+.pt-2{padding-top: 2%}
+.pb-2{padding-bottom: 2%}
+.pt-3{padding-top: 3%}
+.pb-3{padding-bottom: 3%}
+.pt-4{padding-top: 4%}
+.pb-4{padding-bottom: 4%}
+.mini-alert{padding:6px 10px 6px 10px }
+
+.switch span{
+  margin-bottom: -5px;
+}
+.switch.switch-small span:after {
+width: 13px;
+}
+.btn.btn-sm, .btn-group-sm > .btn {
+  font-size: 8px;
+  padding: 0px 4px;
+}
+
+.my-switch-small{ margin: 6px 4px 4px;height: 10px;line-height: 10px}
+
+.breadcrumb .active {
+  color: #23303b;
+}
+
+/* profile prvw section */
+.previewpro {
+  width: 100%;
+  float: left;
+  padding: 15px 10px;
+  position: relative;
+  background: #f8fafc;
+}
+.previewpro .previewpro-image {
+  float: left;
+  width: 100%;
+  margin: 0px 0px 10px;
+  text-align: center;
+}
+.previewpro .previewpro-image img {
+  width: 100px;
+  border: 3px solid #E5E5E5;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.previewpro .previewpro-data {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+.previewpro .previewpro-data .previewpro-data-name {
+  width: 100%;
+  float: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #171717;
+}
+.previewpro .previewpro-data .previewpro-data-title {
+  width: 100%;
+  float: left;
+  font-size: 11px;
+  font-weight: 400;
+  color: #999;
+}
+.previewpro .previewpro-controls a {
+  width: 30px;
+  height: 30px;
+  font-size: 14px;
+  color: #FFF;
+  border: 2px solid #FFF;
+  line-height: 25px;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  padding: 0px;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+.previewpro .previewpro-controls a.previewpro-control-left {
+  left: 15px;
+  top: 53px;
+  text-align: center;
+}
+.previewpro .previewpro-controls a.previewpro-control-right {
+  right: 15px;
+  top: 53px;
+  text-align: center;
+}
+.previewpro .previewpro-controls a.previewpro-control-tright {
+  right: 15px;
+  top: 15px;
+  text-align: center;
+}
+.previewpro .previewpro-controls a .fa,
+.previewpro .previewpro-controls a .glyphicon {
+  width: auto;
+  margin-right: auto;
+}
+.previewpro .previewpro-controls a:hover {
+  border-color: #DDD;
+  color: #DDD;
+}

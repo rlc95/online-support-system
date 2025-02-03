@@ -1,0 +1,7 @@
+Image Picker 1.3.2
+
+Release Notes
+http://docs.hazzardweb.com/imagepicker/1.3/releases
+
+Upgrade Guide
+http://docs.hazzardweb.com/imagepicker/1.3/upgrade
