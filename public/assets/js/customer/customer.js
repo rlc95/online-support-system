@@ -119,6 +119,9 @@ $(function() {
                 var refNum = response.ref;
                 var cusId = response.cuid;
 
+                $("#emlmsg").html(response.msg);
+
+
                 $('#done').on('click',function(){
                     
                     window.location.href = '/ticket_dashboard?ref=' + refNum + '&cuid=' + cusId;

@@ -92,17 +92,23 @@ class CustomerController extends Controller
         
     $customer = Customer::customerData($cusId);
 
-    /*
+    $emailStatus ='';
 
+    // Send email
     if ($customer) {
-        // Send the email
-        Mail::to($customer->email)->send(new CustomerEmail($customer));
-
-        $message = 'Email sent successfully';
-    }else{
+        try {
+            Mail::to($customer->email)->send(new CustomerEmail($customer));
+            $message = 'Email sent successfully';
+            $emailStatus = 'successful';
+        } catch (\Exception $e) {
+            //$message = 'Email could not be sent: ' . $e->getMessage();
+            $message = 'Email could not be sent! Please Contact System Admin ';
+        }
+    } else {
         $message = 'Email sent unsuccessfully! Customer not found';
-    }*/
+    }
 
+    /*
     $to = $customer->email;
      // *** Subject Email ***
     $subject = "Reference Number for Online Support";
@@ -117,23 +123,24 @@ class CustomerController extends Controller
         $message = 'Email sent successfully';
     }else{
         $message = 'Email sent unsuccessfully! Customer not found';
-    }
+    }*/
 
         return response()->json([
             'status' => 'success',
             'ref' => $refNum,
             'cuid' => $cusId,
-            'msg'=>$message
+            'msg'=>$message,
+            'email_status' => $emailStatus,
         ]);
 
 
     }catch(Exception $e){
-        dd($e);
+        //dd($e);
         return response()->json([
             'status' => 'Unsuccess',
             'ref' => '',
             'cuid' => '',
-            'msg'=>''
+            'msg' => 'An error occurred: ' . $e->getMessage()
         ]);
     }
 

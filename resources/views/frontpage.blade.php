@@ -880,6 +880,7 @@
                     </div>
                     Ticket is opened succussfully
                 </div>
+                <div><p id="emlmsg" style="text-align: center;"></p></div>
                 <div class="modal-footer justify-content-center">
                     <button id="done"
                         type="button"
